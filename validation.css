@@ -1,0 +1,127 @@
+.validation {
+  background-color: var(--white1);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999999999999;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.validation.active {
+  visibility: visible;
+  opacity: 1;
+}
+.validation-closeBtn {
+  background-color: var(--black3);
+  padding: 0.3rem 1rem;
+  border-radius: 4rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.signUp {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signUp-right {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.signUp-right img {
+  width: 12rem;
+  margin: 0;
+}
+.signUp-right form {
+  width: 28rem;
+  height: auto;
+  box-shadow: 0 10px 45px var(--gray);
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.signUp-form__title {
+  font-size: 1.5rem !important;
+  font-weight: 600;
+}
+.signUp-form__subtitle {
+  margin-bottom: 2rem;
+}
+.signUp-form__subtitle a {
+  color: var(--primaryLight);
+  font-weight: 900;
+}
+.input-signUp {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-signUp input {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 2.7rem;
+  background-color: var(--black3);
+  border-radius: 0.3rem;
+  padding: 0 0.5rem;
+}
+.input-signUp i {
+  position: absolute;
+  left: 0.7rem;
+  top: 22%;
+}
+.signUpBtn {
+  background-color: var(--primaryLight);
+  width: 100%;
+  height: 2.7rem;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  color: var(--white1);
+  transition: 0.4s;
+}
+.signUpBtn:hover {
+  background-color: var(--primary);
+}
+
+.signUp-left {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 1rem;
+  background-color: var(--white1);
+}
+.signUp-left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .signUp-right {
+    width: 100%;
+  }
+  .signUp-left {
+    display: none;
+  }
+  .signUp-right form {
+    width: 95%;
+  }
+}

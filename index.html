@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Delight</title>
+  </head>
+  <body>
+    <div class="mobile-menu">
+      <a href=""> <img class="nav-logo" src="./image/logo.png" alt="" /></a>
+      <ul class="mobile-menu__items">
+        <li class="active">
+          <a href=""
+            ><i class="bx bx-home"></i>
+            <p>خانه</p></a
+          >
+        </li>
+        <li class="">
+          <a href=""
+            ><i class="bx bx-info-circle"></i>
+            <p>درباره ما</p>
+          </a>
+        </li>
+        <li class="">
+          <a href=""
+            ><i class="bx bxs-phone"></i>
+            <p>تماس با ما</p>
+          </a>
+        </li>
+        <li class="">
+          <a href=""
+            ><i class="bx bx-store-alt"></i>
+            <p>محصولات</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="validation">
+      <div class="signUp">
+        <div class="signUp-right">
+          <a href=""> <img class="nav-logo" src="./image/logo.png" alt="" /></a>
+
+          <form>
+            <p class="signUp-form__title title">عضویت</p>
+            <p class="signUp-form__subtitle subtitle">
+              قبلا ثبت نام کرده اید ؟ <a href="">ورود</a>
+            </p>
+
+            <div class="input-signUp form-signUp__username">
+              <input type="text" placeholder="نام کاربری" />
+              <i class="bx bx-user" style="color: #919191"></i>
+            </div>
+            <div class="input-signUp form-signUp__email">
+              <input type="text" placeholder="ایمیل" />
+              <i class="bx bx-envelope" style="color: #919191"></i>
+            </div>
+            <div class="input-signUp form-signUp__phoneNumber">
+              <input type="text" placeholder="شماره تلفن" />
+              <i class="bx bx-phone" style="color: #919191"></i>
+            </div>
+            <div class="input-signUp form-signUp__password">
+              <input type="password" placeholder="رمز عبور" />
+              <i class="bx bx-lock-alt" style="color: #919191"></i>
+            </div>
+            <div class="input-signUp form-signUp__confPassword">
+              <input type="password" placeholder="تکرار رمز عبور" />
+              <i class="bx bx-shield" style="color: #919191"></i>
+            </div>
+            <button class="signUpBtn">ثبت نام</button>
+          </form>
+        </div>
+        <div class="signUp-left">
+          <img src="" alt="" />
+        </div>
+      </div>
+      <div class="signIn"></div>
+      <button class="validation-closeBtn">خروج</button>
+    </div>
+
+    <header>
+      <nav>
+        <i class="bx bx-menu nav-menuIcon"></i>
+        <a href="" class="nav-logo__link">
+          <img class="nav-logo logo2" src="./image/logo.png" alt="" />
+        </a>
+        <div class="nav-right">
+          <a href=""> <img class="nav-logo" src="./image/logo.png" alt="" /></a>
+          <ul class="nav-items">
+            <li class="nav-item"><a href="" class="active">خانه</a></li>
+            <li class="nav-item"><a href="" class="">محصولات</a></li>
+            <li class="nav-item"><a href="" class="">تماس با ما</a></li>
+            <li class="nav-item"><a href="" class="">درباره ما</a></li>
+          </ul>
+        </div>
+        <div class="nav-left">
+          <div class="nav-searchbar">
+            <input type="text" placeholder="به دنبال چه میگردید ؟" />
+            <i class="bx bx-search"></i>
+          </div>
+
+          <i class="bx bx-search nav-search"></i>
+          <i class="bx bx-user nav-validation"></i>
+          <div class="basket">
+            <i class="bx bx-shopping-bag nav-basket"></i>
+            <div class="basketContainer">
+              <div class="basketContainer-header">
+                <p>سبد خرید</p>
+                <p>
+                  تعداد محصول : <span class="basketContainer-count">0</span>
+                </p>
+              </div>
+              <ul class="basketContainer-items">
+                <img class="emptyBasket" src="./image/empty cart.png" alt="" />
+
+                <li class="basket-item">
+                  <i class="bx bx-x"></i>
+                  <div class="basket-item__info">
+                    <p class="basket-item__info-name">دستبند مروارید</p>
+                    <p class="basket-item__info-price">
+                      155,000 <span> تومان </span>
+                    </p>
+                  </div>
+                  <div class="basket-item__quantity">
+                    <button class="basket-item__quantity-plus">+</button>
+                    <span class="basket-item__quantity-num">1</span>
+                    <button class="basket-item__quantity-minus">-</button>
+                  </div>
+                  <img src="./image/bracelet.jfif" alt="" />
+                </li>
+
+                <li class="basket-item">
+                  <i class="bx bx-x"></i>
+                  <div class="basket-item__info">
+                    <p class="basket-item__info-name">دستبند مروارید</p>
+                    <p class="basket-item__info-price">
+                      155,000 <span> تومان </span>
+                    </p>
+                  </div>
+                  <div class="basket-item__quantity">
+                    <button class="basket-item__quantity-plus">+</button>
+                    <span class="basket-item__quantity-num">1</span>
+                    <button class="basket-item__quantity-minus">-</button>
+                  </div>
+                  <img src="./image/bracelet.jfif" alt="" />
+                </li>
+
+                <li class="basket-item">
+                  <i class="bx bx-x"></i>
+                  <div class="basket-item__info">
+                    <p class="basket-item__info-name">دستبند مروارید</p>
+                    <p class="basket-item__info-price">
+                      155,000 <span> تومان </span>
+                    </p>
+                  </div>
+                  <div class="basket-item__quantity">
+                    <button class="basket-item__quantity-plus">+</button>
+                    <span class="basket-item__quantity-num">1</span>
+                    <button class="basket-item__quantity-minus">-</button>
+                  </div>
+                  <img src="./image/bracelet.jfif" alt="" />
+                </li>
+
+                <li class="basket-item">
+                  <i class="bx bx-x"></i>
+                  <div class="basket-item__info">
+                    <p class="basket-item__info-name">دستبند مروارید</p>
+                    <p class="basket-item__info-price">
+                      155,000 <span> تومان </span>
+                    </p>
+                  </div>
+                  <div class="basket-item__quantity">
+                    <button class="basket-item__quantity-plus">+</button>
+                    <span class="basket-item__quantity-num">1</span>
+                    <button class="basket-item__quantity-minus">-</button>
+                  </div>
+                  <img src="./image/bracelet.jfif" alt="" />
+                </li>
+
+                <li class="basket-item">
+                  <i class="bx bx-x"></i>
+                  <div class="basket-item__info">
+                    <p class="basket-item__info-name">دستبند مروارید</p>
+                    <p class="basket-item__info-price">
+                      155,000 <span> تومان </span>
+                    </p>
+                  </div>
+                  <div class="basket-item__quantity">
+                    <button class="basket-item__quantity-plus">+</button>
+                    <span class="basket-item__quantity-num">1</span>
+                    <button class="basket-item__quantity-minus">-</button>
+                  </div>
+                  <img src="./image/bracelet.jfif" alt="" />
+                </li>
+                
+              </ul>
+              <div class="basketContainer-footer">
+                <p>
+                  قیمت کل : &nbsp;
+                  <span class="basketContainer-priceAll"> 0 </span>&nbsp; تومان
+                </p>
+                <button class="basketContainer-pay">تسویه حساب</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./image/slide1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/slide2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/slide3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/slide4.jpg" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="popular-accessory">
+          <div class="popular-accessory__header">
+            <img src="./image/icons8-watch-90.png" alt="" />
+            <div>
+              <p class="popular-title title">اکسسوری محبوب</p>
+              <p class="popular-subtitle subtitle">
+                با ساعت و دست بند دل هر کیو به دست بیار !
+              </p>
+            </div>
+          </div>
+          <div class="popular-accessory__content">
+            <ul class="accessory-boxs">
+              <li class="accessory-box">
+                <a href="#">
+                  <div class="accessory-box__image">
+                    <img src="./image/bracelet.jfif" alt="" />
+                    <div class="accessory-box__btns">
+                      <i class="bx bx-heart" style="color: var(--primary)"></i>
+                      <!-- <i class='bx bxs-heart' style='color:var(--primaryLight)' ></i> -->
+                      <i
+                        class="bx bx-cart-alt"
+                        style="color: var(--primary)"
+                      ></i>
+                      <!-- <i class='bx bxs-cart-alt' style='color:var(--primaryLight)' ></i> -->
+                    </div>
+                  </div>
+                  <div class="accessory-box__content">
+                    <p class="accessory-box__name">دستبند لاتین</p>
+                    <p class="accessory-box__price">120,000 تومان</p>
+                  </div>
+                </a>
+              </li>
+              <li class="accessory-box">
+                <a href="#">
+                  <div class="accessory-box__image">
+                    <img src="./image/bracelet3.jfif" alt="" />
+                    <div class="accessory-box__btns">
+                      <i class="bx bx-heart" style="color: var(--primary)"></i>
+                      <!-- <i class='bx bxs-heart' style='color:var(--primaryLight)' ></i> -->
+                      <i
+                        class="bx bx-cart-alt"
+                        style="color: var(--primary)"
+                      ></i>
+                      <!-- <i class='bx bxs-cart-alt' style='color:var(--primaryLight)' ></i> -->
+                    </div>
+                  </div>
+                  <div class="accessory-box__content">
+                    <p class="accessory-box__name">دستبند لاتین</p>
+                    <p class="accessory-box__price">120,000 تومان</p>
+                  </div>
+                </a>
+              </li>
+              <li class="accessory-box">
+                <a href="#">
+                  <div class="accessory-box__image">
+                    <img src="./image/bracelet1.jfif" alt="" />
+                    <div class="accessory-box__btns">
+                      <i class="bx bx-heart" style="color: var(--primary)"></i>
+                      <!-- <i class='bx bxs-heart' style='color:var(--primaryLight)' ></i> -->
+                      <i
+                        class="bx bx-cart-alt"
+                        style="color: var(--primary)"
+                      ></i>
+                      <!-- <i class='bx bxs-cart-alt' style='color:var(--primaryLight)' ></i> -->
+                    </div>
+                  </div>
+                  <div class="accessory-box__content">
+                    <p class="accessory-box__name">دستبند لاتین</p>
+                    <p class="accessory-box__price">120,000 تومان</p>
+                  </div>
+                </a>
+              </li>
+              <li class="accessory-box">
+                <a href="#">
+                  <div class="accessory-box__image">
+                    <img src="./image/glass1.jfif" alt="" />
+                    <div class="accessory-box__btns">
+                      <i class="bx bx-heart" style="color: var(--primary)"></i>
+                      <!-- <i class='bx bxs-heart' style='color:var(--primaryLight)' ></i> -->
+                      <i
+                        class="bx bx-cart-alt"
+                        style="color: var(--primary)"
+                      ></i>
+                      <!-- <i class='bx bxs-cart-alt' style='color:var(--primaryLight)' ></i> -->
+                    </div>
+                  </div>
+                  <div class="accessory-box__content">
+                    <p class="accessory-box__name">دستبند لاتین</p>
+                    <p class="accessory-box__price">120,000 تومان</p>
+                  </div>
+                </a>
+              </li>
+              <li class="accessory-box">
+                <a href="#">
+                  <div class="accessory-box__image">
+                    <img src="./image/Necklaces1.jfif" alt="" />
+                    <div class="accessory-box__btns">
+                      <i class="bx bx-heart" style="color: var(--primary)"></i>
+                      <!-- <i class='bx bxs-heart' style='color:var(--primaryLight)' ></i> -->
+                      <i
+                        class="bx bx-cart-alt"
+                        style="color: var(--primary)"
+                      ></i>
+                      <!-- <i class='bx bxs-cart-alt' style='color:var(--primaryLight)' ></i> -->
+                    </div>
+                  </div>
+                  <div class="accessory-box__content">
+                    <p class="accessory-box__name">دستبند لاتین</p>
+                    <p class="accessory-box__price">120,000 تومان</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
